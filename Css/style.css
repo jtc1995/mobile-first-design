@@ -2,7 +2,14 @@ body{
 font-family: "Roboto", sans-serif;
 }
 
-.alert-container{}
+.alert-container .col-12{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.alert {
+    margin: 0;
+}
 
 .callout-container{
     height: 100vh;
@@ -22,11 +29,58 @@ font-family: "Roboto", sans-serif;
 
 .quotes-container{}
 
+/*navbar*/
 
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    background: inherit;
+}
+
+.navbar .navbar-toggler {
+
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav {
+
+    font-weight: bold;
+}
+
+a:hover {
+   
+    color: #343a40;
+}
+
+.site-wide-alert {
+   color: #544600;
+    background-color: #eec802;
+    border-color: #eec802;
+    padding: 5px 15px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 0;
+
+}
 /*jumbotron*/
 
 .jumbotron{
-   background-color: transparent;
+    background-color: rgba(0,0,0,0);
 }
 
 .jumbotron-header{
@@ -93,17 +147,17 @@ background-color: rgba(0,0,0,0.5);
     width: 160px;
     }
 
-.btn-red{
+.btn--red{
     color: white;
     background-color: #ffa103;
     border-color: #ffa103;
 
 }    
 
-.btn-red:hover,
-.btn-red:active,
-.btn-red:focus,
-.btn-red:active:focus {
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
 
     background-color: #ff8503;
     border-color: #ff8503;
